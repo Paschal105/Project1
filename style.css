@@ -1,4 +1,3 @@
-/* reset the default spacing the browser adds */
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +9,9 @@ body {
     color: #111;
 }
 
-/* ================= NAV ================= */
+/* NAV */
 
-/* logo, menu, buttons in one row */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -30,12 +29,12 @@ nav {
 .nav_menu {
     display: flex;
     gap: 24px;
-    list-style: none;   /* removes the bullet dots */
+    list-style: none;   
 }
 
 .nav_menu a {
     color: #111;
-    text-decoration: none;   /* removes the underline */
+    text-decoration: none;   
     font-weight: 500;
     font-size: 14px;
 }
@@ -49,7 +48,7 @@ nav {
     gap: 20px;
 }
 
-/* outlined button */
+
 .login {
     padding: 10px 40px;
     border: 1px solid #543EE0;
@@ -59,7 +58,7 @@ nav {
     font-weight: 500;
 }
 
-/* filled purple button */
+
 .signup {
     padding: 10px 40px;
     border: 1px solid #543EE0;
@@ -70,16 +69,15 @@ nav {
     font-weight: 500;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
-    /* the gradient is a see-through dark layer on top of the photo so the white text is readable */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/firstPic.jpg");
     background-size: cover;
     background-position: center;
     height: 610px;
 
-    /* stack the text and center it up and down */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +89,7 @@ nav {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.5;
-    max-width: 650px;   /* makes the title wrap onto 2 lines */
+    max-width: 650px;   
     margin-bottom: 20px;
 }
 
@@ -102,10 +100,10 @@ nav {
     margin-bottom: 30px;
 }
 
-/* used in the hero AND the team section */
+
 .get_started {
-    display: inline-block;   /* lets padding work on a link */
-    width: fit-content;      /* stops it stretching full width */
+    display: inline-block;   
+    width: fit-content;      
     padding: 10px 20px;
     background-color: #543EE0;
     color: white;
@@ -114,9 +112,9 @@ nav {
     font-weight: 500;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT  */
 
-/* text box and image side by side */
+
 .about_section {
     display: flex;
     justify-content: space-between;
@@ -144,7 +142,7 @@ nav {
     border-radius: 6px;
 }
 
-/* ================= WHY JOIN ================= */
+/* WHY JOIN */
 
 .reason {
     padding: 80px;
@@ -156,15 +154,15 @@ nav {
     margin-bottom: 40px;
 }
 
-/* only the intro paragraph, not the ones in the cards */
+
 .reason > p {
     max-width: 830px;
-    margin: 0 auto;      /* centers the box */
+    margin: 0 auto;      
     text-align: left;
     line-height: 1.5;
 }
 
-/* three cards in a row */
+
 .cards {
     display: flex;
     justify-content: center;
@@ -180,13 +178,13 @@ nav {
     text-align: left;
 }
 
-/* icon sits in a light circle */
+
 .card img {
     width: 70px;
     height: 70px;
     padding: 20px;
     background-color: #f0f0f5;
-    border-radius: 50%;   /* makes it a circle */
+    border-radius: 50%;   
 }
 
 .card h3 {
@@ -200,23 +198,23 @@ nav {
     line-height: 1.5;
 }
 
-/* ================= PROFILE / TESTIMONIAL ================= */
+/* PROFILE / TESTIMONIAL */
 
-/* photo on the left, quote on the right */
+
 .profile {
     display: flex;
     align-items: center;
     gap: 60px;
     padding: 100px 80px;
-    background-color: #FFF7E6;   /* light cream */
+    background-color: #FFF7E6;   
 }
 
 .profile img {
     width: 300px;
     height: 300px;
-    flex-shrink: 0;      /* stops flex from squeezing the photo smaller */
+    flex-shrink: 0;      
     border-radius: 50%;
-    object-fit: cover;   /* crops the photo instead of squishing it */
+    object-fit: cover;   
 }
 
 .profile_text .quote {
@@ -231,7 +229,7 @@ nav {
     margin-bottom: 30px;
 }
 
-/* the job title is smaller than the name */
+
 .profile_text .name span {
     font-size: 14px;
     font-weight: 400;
@@ -247,9 +245,9 @@ nav {
     font-weight: 500;
 }
 
-/* ================= TEAM ================= */
+/* TEAM */
 
-/* photos on the left, text on the right */
+
 .team {
     display: flex;
     align-items: center;
@@ -257,7 +255,7 @@ nav {
     padding: 100px 160px;
 }
 
-/* stack the 3 photos top to bottom */
+
 .team_images {
     display: flex;
     flex-direction: column;
@@ -272,7 +270,7 @@ nav {
     object-fit: cover;
 }
 
-/* push the middle photo to the right and overlap it with the other two */
+
 .team_images img:nth-child(2) {
     align-self: flex-end;
     margin: -40px 0;
@@ -292,15 +290,15 @@ nav {
     margin-bottom: 40px;
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER */
 
-/* logo + 3 columns in a row */
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 70px 120px 200px;   /* top, sides, bottom - the design has lots of space at the bottom */
-    background-color: #FFF7E6;   /* same cream as the testimonial */
+    padding: 70px 120px 200px;   
+    background-color: #FFF7E6;   
 }
 
 .footer_logo {
