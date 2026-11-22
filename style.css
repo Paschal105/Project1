@@ -1,0 +1,334 @@
+/* reset the default spacing the browser adds */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    color: #111;
+}
+
+/* ================= NAV ================= */
+
+/* logo, menu, buttons in one row */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+#logo p {
+    font-size: 40px;
+    font-weight: 700;
+    color: #543EE0;
+}
+
+.nav_menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;   /* removes the bullet dots */
+}
+
+.nav_menu a {
+    color: #111;
+    text-decoration: none;   /* removes the underline */
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav_menu a:hover {
+    color: #543EE0;
+}
+
+.nav_button {
+    display: flex;
+    gap: 20px;
+}
+
+/* outlined button */
+.login {
+    padding: 10px 40px;
+    border: 1px solid #543EE0;
+    border-radius: 6px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* filled purple button */
+.signup {
+    padding: 10px 40px;
+    border: 1px solid #543EE0;
+    border-radius: 6px;
+    background-color: #543EE0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    /* the gradient is a see-through dark layer on top of the photo so the white text is readable */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/firstPic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 610px;
+
+    /* stack the text and center it up and down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 230px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 650px;   /* makes the title wrap onto 2 lines */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+/* used in the hero AND the team section */
+.get_started {
+    display: inline-block;   /* lets padding work on a link */
+    width: fit-content;      /* stops it stretching full width */
+    padding: 10px 20px;
+    background-color: #543EE0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* ================= ABOUT ================= */
+
+/* text box and image side by side */
+.about_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 80px;
+}
+
+.about_text {
+    width: 50%;
+}
+
+.about_text h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about_text p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.about_section img {
+    width: 40%;
+    border-radius: 6px;
+}
+
+/* ================= WHY JOIN ================= */
+
+.reason {
+    padding: 80px;
+    text-align: center;
+}
+
+.reason h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* only the intro paragraph, not the ones in the cards */
+.reason > p {
+    max-width: 830px;
+    margin: 0 auto;      /* centers the box */
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* three cards in a row */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.card {
+    width: 245px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* icon sits in a light circle */
+.card img {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: #f0f0f5;
+    border-radius: 50%;   /* makes it a circle */
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ================= PROFILE / TESTIMONIAL ================= */
+
+/* photo on the left, quote on the right */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 80px;
+    background-color: #FFF7E6;   /* light cream */
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;      /* stops flex from squeezing the photo smaller */
+    border-radius: 50%;
+    object-fit: cover;   /* crops the photo instead of squishing it */
+}
+
+.profile_text .quote {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.profile_text .name {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* the job title is smaller than the name */
+.profile_text .name span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.join {
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: #543EE0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* ================= TEAM ================= */
+
+/* photos on the left, text on the right */
+.team {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding: 100px 160px;
+}
+
+/* stack the 3 photos top to bottom */
+.team_images {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    flex-shrink: 0;
+}
+
+.team_images img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* push the middle photo to the right and overlap it with the other two */
+.team_images img:nth-child(2) {
+    align-self: flex-end;
+    margin: -40px 0;
+}
+
+.team_text h2 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.team_text p {
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/* ================= FOOTER ================= */
+
+/* logo + 3 columns in a row */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px 120px 200px;   /* top, sides, bottom - the design has lots of space at the bottom */
+    background-color: #FFF7E6;   /* same cream as the testimonial */
+}
+
+.footer_logo {
+    font-size: 44px;
+    font-weight: 700;
+    color: #543EE0;
+}
+
+/* column titles */
+.footer_column p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer_column ul {
+    list-style: none;
+}
+
+.footer_column li {
+    margin-bottom: 12px;
+}
+
+.footer_column a {
+    color: #111;
+    text-decoration: none;
+}
+
+.footer_column a:hover {
+    color: #543EE0;
+}
